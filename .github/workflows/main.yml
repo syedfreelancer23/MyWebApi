@@ -1,0 +1,18 @@
+Name:Publish  
+on:
+  workflow_dispatch:
+push:
+branches:
+-main
+jobs:
+runs-on:ubunto-latest  
+-uses :action/checkout@v3
+name: setup .Net 
+with:
+dotnet --version '8.0.x'        
+-name :Restore  
+
+
+
+
+
